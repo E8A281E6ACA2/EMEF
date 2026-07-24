@@ -1,0 +1,2 @@
+"""Chinese prompt pack namespace."""
+

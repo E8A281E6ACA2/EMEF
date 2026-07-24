@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "wheat_gold_001",
+  "source": {"source_type": "synthetic"},
+  "entities": [
+    {"name": "冬小麦", "type": "作物", "attributes": {}},
+    {"name": "处理A", "type": "试验处理", "attributes": {}},
+    {"name": "氮肥", "type": "农业投入品", "attributes": {}}
+  ],
+  "relations": [
+    {
+      "source": "处理A",
+      "target": "氮肥",
+      "type": "使用",
+      "evidence": "处理A在拔节期追施氮肥"
+    }
+  ],
+  "warnings": []
+}

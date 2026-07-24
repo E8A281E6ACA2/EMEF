@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "four-stage-knowledge-extraction-review-artifact"
+version = "0.1.0"
+description = "Prepublication artifact for four-stage scientific knowledge extraction"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {file = "LICENSE"}
+dependencies = [
+    "openai==2.24.0",
+    "neo4j==6.0.3",
+    "pydantic==2.12.5",
+    "python-dotenv==1.2.2",
+    "PyYAML==6.0.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

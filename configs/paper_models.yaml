@@ -1,0 +1,31 @@
+schema_version: 1
+artifact_status: prepublication_review
+
+# Reference settings for running the released code. These values do not identify
+# or reproduce the withheld paper experiments.
+reference_inference:
+  api_key_env: OPENAI_API_KEY
+  base_url_env: OPENAI_BASE_URL
+  model_env: OPENAI_MODEL
+  temperature: 0.5
+  max_tokens: 16384
+  timeout_seconds: 600
+  openai_client_max_retries: 3
+  application_retry_max: 5
+  application_retry_base_delay_seconds: 2.0
+  application_retry_jitter: 0.3
+  chunk_max_chars: 0
+  chunk_overlap_chars: 0
+  prompt_language: cn
+  schema_validation: false
+  schema_retry_max: 1
+  stream: true
+  seed: null
+  top_p: null
+
+release_boundary:
+  paper_run_model_identities_included: false
+  paper_results_included: false
+  dataset_statistics_included: false
+  credentials_included: false
+  provider_endpoints_included: false

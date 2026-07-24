@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "wheat_gold_001",
+  "source": {"source_type": "synthetic"},
+  "events": [
+    {
+      "trigger": "追施氮肥",
+      "category": "农事操作",
+      "subtype": "施肥",
+      "arguments": {"crop": "冬小麦", "stage": "拔节期", "material": "氮肥"},
+      "evidence": "处理A在拔节期追施氮肥"
+    },
+    {
+      "trigger": "籽粒快速灌浆",
+      "category": "生育过程",
+      "subtype": "灌浆",
+      "arguments": {"crop": "冬小麦"},
+      "evidence": "拔节期施肥发生在籽粒快速灌浆之前"
+    }
+  ],
+  "warnings": []
+}

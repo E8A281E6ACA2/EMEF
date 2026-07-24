@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "wheat_gold_001",
+  "source": {"source_type": "synthetic"},
+  "causal_relations": [
+    {
+      "cause_event": "叶绿素含量升高",
+      "effect_event": "干物质积累增加",
+      "relation_type": "促进",
+      "logic_type": "生理机制",
+      "evidence": "叶绿素含量升高促进了干物质积累"
+    },
+    {
+      "cause_event": "干物质积累增加",
+      "effect_event": "籽粒产量提高",
+      "relation_type": "促进",
+      "logic_type": "产量形成",
+      "evidence": "干物质积累增加最终促进籽粒产量提高"
+    }
+  ],
+  "warnings": []
+}
