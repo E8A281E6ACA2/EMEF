@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "wheat_gold_001",
+  "source": {"source_type": "synthetic"},
+  "events": [
+    {"trigger": "追施氮肥", "category": "农事操作", "evidence": "拔节期施肥发生在籽粒快速灌浆之前"},
+    {"trigger": "籽粒快速灌浆", "category": "生育过程", "evidence": "拔节期施肥发生在籽粒快速灌浆之前"}
+  ],
+  "temporal_relations": [
+    {
+      "source_event": "追施氮肥",
+      "target_event": "籽粒快速灌浆",
+      "relation_type": "先于",
+      "evidence": "拔节期施肥发生在籽粒快速灌浆之前"
+    }
+  ],
+  "warnings": []
+}
